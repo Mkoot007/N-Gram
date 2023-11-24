@@ -15,7 +15,7 @@ def extract_text_from_docx(file):
         text += paragraph.text + " "
     return text
 st.title("Bigram Extractor")
-st.text("Made by Moneeb Ahmad with Lil Love ❤️")
+
 file = st.file_uploader("Upload a document (DOCX)", type=["docx"])
 text_input = st.text_area("Enter text:", "Type or paste your text here.")
 if file is not None:
@@ -26,3 +26,4 @@ if st.button("Extract Bigrams"):
     bigrams_result = extract_bigrams(text_input)
     st.subheader("Bigrams:")
     st.write(bigrams_result)
+    st.text("Made by Moneeb Ahmad with Lil Love ❤️")
