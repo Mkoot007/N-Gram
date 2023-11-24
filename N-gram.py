@@ -13,3 +13,4 @@ if st.button("Extract Bigrams"):
     bigrams_result = extract_bigrams(text_input)
     st.subheader("Bigrams:")
     st.write(bigrams_result)
+    st.text("Made by Moneeb Ahmad with Frustration for a quiz")
