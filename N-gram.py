@@ -7,10 +7,11 @@ def extract_bigrams(text):
     bigram_list = list(bigrams(words))
     return bigram_list
 st.title("Bigram Extractor")
+st.text("Made by Moneeb Ahmad with Lil Love ❤️")
 text_input = st.text_area("Enter text:", "Type or paste your text here.")
 
 if st.button("Extract Bigrams"):
     bigrams_result = extract_bigrams(text_input)
     st.subheader("Bigrams:")
     st.write(bigrams_result)
-    st.text("Made by Moneeb Ahmad with Frustration for a quiz")
+
